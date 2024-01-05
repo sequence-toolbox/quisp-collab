@@ -2,9 +2,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import sys
 
-
-DATA_FILE = "results/simple_link_jun_12.csv"
+DATA_FILE = sys.argv[1]
 
 # plotting parameters
 mpl.rcParams.update({'font.sans-serif': 'Helvetica',

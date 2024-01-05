@@ -1,13 +1,12 @@
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
+import sys
 
-
-DATA_FILE = "results/results_change_distance/simple_link_var_jun_27.csv"
+DATA_FILE = sys.argv[1]
 
 # plotting parameters
-mpl.rcParams.update({'font.sans-serif': 'Helvetica',
-                     'font.size': 12})
+#mpl.rcParams.update({'font.sans-serif': 'Helvetica', 'font.size': 12})
 
 df = pd.read_csv(DATA_FILE)
 

@@ -1,19 +1,21 @@
 import numpy as np
 import pandas as pd
 import time
+from datetime import date
 
 from sequence.topology.router_net_topo import RouterNetTopo
 from sequence.app.request_app import RequestApp
 import sequence.utils.log as log
 
+today = date.today()
 
 CONFIG_FILE = "config_files/simple_link_bds.json"
 
 # meta params
 NO_TRIALS = 1
-OUTPUT_FILE = "results/dump_sep_19.csv"
+OUTPUT_FILE = "results/simple_link_1h_"+str(today)+".csv"
 LOGGING = False
-LOG_OUTPUT = "results/simple_link_log.csv"
+LOG_OUTPUT = "results/simple_link_1h_log.csv"
 MODULE_TO_LOG = ["timeline", "memory", "bsm", "generation", "request_app"]
 
 # simulation params
