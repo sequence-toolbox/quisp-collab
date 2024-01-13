@@ -5,8 +5,8 @@ import sys
 
 DATA_FILE = sys.argv[1]
 
-# plotting parameters
-#mpl.rcParams.update({'font.sans-serif': 'Helvetica', 'font.size': 12})
+#plotting parameters
+mpl.rcParams.update({'font.sans-serif': 'DejaVu Sans', 'font.size': 12})
 
 df = pd.read_csv(DATA_FILE)
 
@@ -17,6 +17,7 @@ total_time = 1e3 / throughput
 error_total_time = total_time * (error / throughput)
 
 # plotting of values
+plt.close()
 fig, ax = plt.subplots()
 ax2 = ax.twinx()
 
@@ -36,4 +37,5 @@ ax.set_xlabel("Alice-midpoint distance (km)")
 ax.grid('on')
 
 fig.tight_layout()
+fig.savefig('../results/bar-dist-perf.pdf')
 fig.show()

@@ -7,7 +7,7 @@ import sys
 DATA_FILE = sys.argv[1]
 
 # plotting parameters
-mpl.rcParams.update({'font.sans-serif': 'Helvetica',
+mpl.rcParams.update({'font.sans-serif': 'DejaVu Sans',
                      'font.size': 12})
 
 
@@ -18,6 +18,7 @@ throughput = df["Average Throughput"]
 error = df["Std. Throughput"]
 
 # plotting of bar graph
+plt.close()
 fig, ax = plt.subplots()
 ax2 = ax.twinx()
 xtick_loc = np.arange(len(memo_labels))
@@ -43,10 +44,12 @@ ax.set_xticks(ticks=xtick_loc, labels=memo_labels)
 ax.set_xlabel("Number of Memories")
 ax.grid('on', axis='y')
 fig.tight_layout()
+fig.savefig('../results/bar-mem-perf.pdf')
 fig.show()
 
 
 # plotting of variance
+plt.close()
 plt.plot(memo_labels, error, '-o')
 plt.ylim((0, 17))
 plt.ylim((0, 7.5))
@@ -55,4 +58,5 @@ plt.ylabel("Throughput Error")
 plt.grid('on')
 
 plt.tight_layout()
+plt.savefig('../results/line-mem-perf.pdf')
 plt.show()

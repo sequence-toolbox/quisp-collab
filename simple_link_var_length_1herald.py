@@ -12,8 +12,8 @@ today = date.today()
 CONFIG_FILE = "config_files/simple_link_bds.json"
 
 # meta params
-NO_TRIALS = 1
-OUTPUT_FILE = "results/simple_link_1h_"+str(today)+".csv"
+NO_TRIALS = 50
+OUTPUT_FILE = "results/simple_link_sh_"+str(today)+".csv"
 LOGGING = False
 LOG_OUTPUT = "results/simple_link_1h_log.csv"
 MODULE_TO_LOG = ["timeline", "memory", "bsm", "generation", "request_app"]

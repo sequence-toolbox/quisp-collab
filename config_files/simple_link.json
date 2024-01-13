@@ -42,7 +42,7 @@
             }
         },
         "perfect_bsm": {
-            "SingleAtomBSM": {
+            "SingleHeraldedBSM": {
                 "detectors": [
                     {
                         "efficiency": 1,
