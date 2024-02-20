@@ -13,9 +13,9 @@ CONFIG_FILE = "config_files/simple_link.json"
 
 # meta params
 NO_TRIALS = 50
-OUTPUT_FILE = "results/simple_link_"+str(today)+".csv"
+OUTPUT_FILE = "results/var_mem_"+str(today)+".csv"
 LOGGING = False
-LOG_OUTPUT = "results/simple_link_log.csv"
+LOG_OUTPUT = "results/var_mem_log.csv"
 MODULE_TO_LOG = ["timeline", "memory", "bsm", "generation", "request_app"]
 
 # simulation params

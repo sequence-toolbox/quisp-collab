@@ -29,13 +29,13 @@
         {
             "node1": "left",
             "node2": "right",
-            "delay": 1000000000
+            "delay": 100000000
         }
     ],
     "templates": {
         "perfect_router": {
             "MemoryArray": {
-                "frequency": 2e3,
+                "frequency": 2e8,
                 "coherence_time": -1,
                 "efficiency": 1,
                 "fidelity": 1

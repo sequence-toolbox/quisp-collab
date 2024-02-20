@@ -44,7 +44,7 @@ ax.set_xticks(ticks=xtick_loc, labels=memo_labels)
 ax.set_xlabel("Number of Memories")
 ax.grid('on', axis='y')
 fig.tight_layout()
-fig.savefig('../results/bar-mem-perf.pdf')
+fig.savefig('../graphs/bar-mem-perf.pdf')
 fig.show()
 
 
@@ -58,5 +58,5 @@ plt.ylabel("Throughput Error")
 plt.grid('on')
 
 plt.tight_layout()
-plt.savefig('../results/line-mem-perf.pdf')
+plt.savefig('../graphs/line-mem-perf.pdf')
 plt.show()

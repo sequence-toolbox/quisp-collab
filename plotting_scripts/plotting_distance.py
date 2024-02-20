@@ -37,5 +37,5 @@ ax.set_xlabel("Alice-midpoint distance (km)")
 ax.grid('on')
 
 fig.tight_layout()
-fig.savefig('../results/bar-dist-perf.pdf')
+fig.savefig('../graphs/bar-dist-perf.pdf')
 fig.show()
